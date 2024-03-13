@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DAL.Migrations
 {
-    [DbContext(typeof(WebshopContext))]
-    partial class WebshopContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(WebShopContext))]
+    partial class WebShopContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -79,6 +79,9 @@ namespace DAL.Migrations
                     b.Property<int?>("UserId1")
                         .HasColumnType("int");
 
+                    b.Property<bool>("isPayed")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
@@ -105,11 +108,16 @@ namespace DAL.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId")
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId")
                         .IsUnique()
-                        .HasFilter("[OrderId] IS NOT NULL");
+                        .HasFilter("[ProductId] IS NOT NULL");
 
                     b.ToTable("OrderPositions");
                 });
@@ -259,11 +267,18 @@ namespace DAL.Migrations
             modelBuilder.Entity("Model.OrderPosition", b =>
                 {
                     b.HasOne("Model.Order", "Order")
+                        .WithMany("OrderPositions")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Model.Product", "Product")
                         .WithOne("OrderPosition")
-                        .HasForeignKey("Model.OrderPosition", "OrderId")
+                        .HasForeignKey("Model.OrderPosition", "ProductId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Order");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Model.Product", b =>
@@ -297,12 +312,14 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("Model.Order", b =>
                 {
-                    b.Navigation("OrderPosition");
+                    b.Navigation("OrderPositions");
                 });
 
             modelBuilder.Entity("Model.Product", b =>
                 {
                     b.Navigation("BasketPosition");
+
+                    b.Navigation("OrderPosition");
                 });
 
             modelBuilder.Entity("Model.ProductGroup", b =>

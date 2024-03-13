@@ -3,7 +3,7 @@ using Model;
 
 namespace DAL
 {
-    public class WebshopContext : DbContext
+    public class WebShopContext : DbContext
     {
         public DbSet<BasketPosition> BasketPositions { get; set; }
         public DbSet<Product> Products { get; set; }
@@ -53,9 +53,15 @@ namespace DAL
 
             modelBuilder.Entity<OrderPosition>()
                 .HasOne(op => op.Order)
-                .WithOne(o => o.OrderPosition)
-                .HasForeignKey<OrderPosition>(op => op.OrderId)
+                .WithMany(o => o.OrderPositions)
+                .HasForeignKey(op => op.OrderId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<OrderPosition>()
+               .HasOne(op => op.Product)
+               .WithOne(p => p.OrderPosition)
+               .HasForeignKey<OrderPosition>(op => op.ProductId)
+               .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

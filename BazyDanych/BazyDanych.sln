@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazyDanych", "BazyDanych.csproj", "{47C8FD82-9696-45CF-A1C8-F0A0C64BF3C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BazyDanych", "BazyDanych.csproj", "{47C8FD82-9696-45CF-A1C8-F0A0C64BF3C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "..\Model\Model.csproj", "{DFAD93CA-CE4C-4159-A484-E357B9209189}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "..\Model\Model.csproj", "{DFAD93CA-CE4C-4159-A484-E357B9209189}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "..\DAL\DAL.csproj", "{5BA11963-65F2-45AE-B9D5-18A4CC6CA478}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "..\DAL\DAL.csproj", "{5BA11963-65F2-45AE-B9D5-18A4CC6CA478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "..\BLL\BLL.csproj", "{8893DC09-791A-4FD1-97F6-26F281068CAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5BA11963-65F2-45AE-B9D5-18A4CC6CA478}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BA11963-65F2-45AE-B9D5-18A4CC6CA478}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BA11963-65F2-45AE-B9D5-18A4CC6CA478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8893DC09-791A-4FD1-97F6-26F281068CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8893DC09-791A-4FD1-97F6-26F281068CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8893DC09-791A-4FD1-97F6-26F281068CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8893DC09-791A-4FD1-97F6-26F281068CAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

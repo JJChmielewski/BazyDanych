@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DAL.Migrations
 {
-    [DbContext(typeof(WebshopContext))]
-    [Migration("20240313164038_migration1")]
+    [DbContext(typeof(WebShopContext))]
+    [Migration("20240313175843_migration1")]
     partial class migration1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -81,6 +81,9 @@ namespace DAL.Migrations
                     b.Property<int?>("UserId1")
                         .HasColumnType("int");
 
+                    b.Property<bool>("isPayed")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
@@ -109,9 +112,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId")
-                        .IsUnique()
-                        .HasFilter("[OrderId] IS NOT NULL");
+                    b.HasIndex("OrderId");
 
                     b.ToTable("OrderPositions");
                 });
@@ -261,8 +262,8 @@ namespace DAL.Migrations
             modelBuilder.Entity("Model.OrderPosition", b =>
                 {
                     b.HasOne("Model.Order", "Order")
-                        .WithOne("OrderPosition")
-                        .HasForeignKey("Model.OrderPosition", "OrderId")
+                        .WithMany("OrderPositions")
+                        .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Order");
@@ -299,7 +300,7 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("Model.Order", b =>
                 {
-                    b.Navigation("OrderPosition");
+                    b.Navigation("OrderPositions");
                 });
 
             modelBuilder.Entity("Model.Product", b =>

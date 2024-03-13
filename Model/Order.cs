@@ -19,6 +19,7 @@ namespace Model
 
         public DateTime DateTime { get; set; }
 
-        public OrderPosition? OrderPosition { get; set; }
+        public ICollection<OrderPosition>? OrderPositions { get; set; }
+        public bool isPayed { get; set; }
     }
 }

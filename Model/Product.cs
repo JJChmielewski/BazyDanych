@@ -22,5 +22,7 @@ namespace Model
 
         public BasketPosition? BasketPosition { get; set; }
 
+        public OrderPosition? OrderPosition { get; set; }
+
     }
 }
