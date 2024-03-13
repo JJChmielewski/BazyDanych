@@ -10,13 +10,13 @@ namespace BLL.ServiceInterfaces
     public interface OrderService
     {
 
-        public void addProductToBasket(ProductRequestDTO product, int orderId);
+        public void addProductToBasket(int productId, int basketId);
 
-        public void updateProductQuantityInBasket(ProductRequestDTO product, int orderId, int quantity);
+        public void updateProductQuantityInBasket(int productId, int basketId, int quantity);
 
-        public void removeProductFromBasket(ProductRequestDTO product, int orderId);
+        public void removeProductFromBasket(int productId, int basketId);
 
-        public OrderResponseDTO getOrder(int orderId);
+        public OrderResponseDTO generateOrder(int userId);
 
         public void payForOrder(int orderId);
 

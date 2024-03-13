@@ -8,6 +8,12 @@ namespace BLL.DTOModels
 {
     public class OrderItemDTO
     {
+        public OrderItemDTO(ProductResponseDTO product, int quantity)
+        {
+            Product = product;
+            Quantity = quantity;
+        }
+
         public ProductResponseDTO Product { get; }
         public int Quantity { get; }
 

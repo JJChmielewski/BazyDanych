@@ -10,6 +10,16 @@ namespace Model
 {
     public class OrderPosition
     {
+        public OrderPosition() { }
+
+        public OrderPosition(BasketPosition basketPosition) { 
+            this.Amount = basketPosition.Amount;
+            this.Product = basketPosition.Product;
+            this.ProductId = basketPosition.ProductId;
+            this.Price = basketPosition.Product.Price * this.Amount;
+        }
+
+
         [Key]
         public int Id { get; set; }
 

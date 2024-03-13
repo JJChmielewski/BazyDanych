@@ -8,6 +8,14 @@ namespace BLL.DTOModels
 {
     public class ProductResponseDTO
     {
+        public ProductResponseDTO(int id, string name, double price, string groupName)
+        {
+            Id = id;
+            Name = name;
+            Price = price;
+            GroupName = groupName;
+        }
+
         public int Id { get; }
         public string Name { get; }
         public double Price { get; }

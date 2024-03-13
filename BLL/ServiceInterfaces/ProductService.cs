@@ -10,17 +10,17 @@ namespace BLL.ServiceInterfaces
     public interface ProductService
     {
 
-        public ICollection<ProductResponseDTO> getProducts();
+        public List<ProductResponseDTO> getProducts();
 
-        public ICollection<ProductResponseDTO> getProducts(bool includeInactive);
+        public List<ProductResponseDTO> getProducts(bool includeInactive);
 
-        public ICollection<ProductResponseDTO> getProducts(ICollection<ProductResponseDTO> products, string criteria, string value);
+        public List<ProductResponseDTO> filterProducts(List<ProductResponseDTO> products, string criteria, string value);
 
-        public ICollection<ProductResponseDTO> sortProducts(ICollection<ProductResponseDTO> products, string criteria, string value);
+        public List<ProductResponseDTO> sortProducts(List<ProductResponseDTO> products, string criteria);
 
-        public void deleteProduct(ProductRequestDTO product, bool deletePermanently);
+        public void deleteProduct(int productId, bool deletePermanently);
 
-        public void reactivateProduct(ProductRequestDTO product);
+        public void reactivateProduct(int productId);
 
     }
 }

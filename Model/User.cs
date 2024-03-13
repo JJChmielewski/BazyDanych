@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Buffers.Text;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -25,7 +26,7 @@ namespace Model
 
         public int? UserGroupId { get; set; }
 
-        public BasketPosition? BasketPosition { get; set; }
+        public ICollection<BasketPosition>? BasketPosition { get; set; }
 
         public ICollection<Order>? Orders { get; set; } = new List<Order>();
         
