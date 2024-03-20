@@ -18,7 +18,7 @@ namespace BLL.ServiceInterfaces
 
         public OrderResponseDTO generateOrder(int userId);
 
-        public void payForOrder(int orderId);
+        public void payForOrder(int orderId, double payment);
 
     }
 }

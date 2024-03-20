@@ -14,29 +14,32 @@ namespace BLL_EF
     public class ProductServiceEF : ProductService
     {
 
-        private WebShopContext context;
+        private WebShopContext context = new WebShopContext();
 
         public void deleteProduct(int productId, bool deletePermanently)
         {
-            Product prod = context.Products.Where(p => p.Id == productId).First();
+            Product? prod = context.Products.Where(p => p.Id == productId).FirstOrDefault();
 
-            if (prod == null)
+            if (prod == null || prod.BasketPosition != null || (prod.OrderPosition != null && !prod.OrderPosition.Order.isPayed))
             {
                 return;
             }
+         
 
-            prod.IsActive = false;
-
-            if (deletePermanently)
+            if (deletePermanently && !(prod.OrderPosition != null && !prod.OrderPosition.Order.isPayed))
             {
                 context.Products.Remove(prod);
+            } 
+            else
+            {
+                prod.IsActive = false;
             }
             context.SaveChanges();
         }
 
         public void reactivateProduct(int productId)
         {
-            Product prod = context.Products.Where(p => p.Id == productId).First();
+            Product? prod = context.Products.Where(p => p.Id == productId).FirstOrDefault();
 
             if (prod != null)
             {
@@ -52,7 +55,7 @@ namespace BLL_EF
 
         public List<ProductResponseDTO> getProducts(bool includeInactive)
         {
-            List<Product> products;
+            List<Product>? products;
 
             if (includeInactive)
             {
@@ -66,8 +69,9 @@ namespace BLL_EF
 
             foreach (Product prod in products)
             {
+
                 ProductResponseDTO responseProductDTO = new ProductResponseDTO(
-                    prod.Id, prod.Name, prod.Price, prod.ProductGroup == null ? "" : prod.ProductGroup.Name);
+                    prod.Id, prod.Name, prod.Price, prod.ProductGroup == null ? "" : getGroupName(prod.ProductGroup));
 
                 responseProducts.Add(responseProductDTO);
             }
@@ -112,7 +116,45 @@ namespace BLL_EF
                     throw new Exception("Unknown criteria");
             }
 
+
+
             return products;
+        }
+
+        public String getGroupName(ProductGroup productGroup)
+        {
+            string groupName = "";
+
+            if (productGroup.Parent != null)
+            {
+                groupName += getGroupName(productGroup.Parent) + " / " + productGroup.Name;
+            }
+
+            return groupName;
+        }
+
+        public void addProduct(string name, double price, int groupId)
+        {
+            if (price <= 0)
+            {
+                return;
+            }
+
+            Product product = new Product();
+            product.Name = name;
+            product.Price = price;
+            product.Image = "";
+            product.GroupId = groupId;
+            product.ProductGroup = context.ProductGroups.Where(group => group.ProductGroupId == groupId).FirstOrDefault();
+
+            if (product.ProductGroup != null)
+            {
+                product.GroupId = groupId;
+                product.ProductGroup.Products.Add(product);
+            }
+
+            context.Products.Add(product);
+            context.SaveChanges();
         }
     }
 }

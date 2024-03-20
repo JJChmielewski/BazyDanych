@@ -20,6 +20,8 @@ namespace BLL.ServiceInterfaces
 
         public void deleteProduct(int productId, bool deletePermanently);
 
+        public void addProduct(string name, double price, int groupId);
+
         public void reactivateProduct(int productId);
 
     }

@@ -9,3 +9,16 @@ C:\Users\student\Desktop\JC_BAZY\BazyDanych\BLL\obj\Debug\net6.0\BLL.dll
 C:\Users\student\Desktop\JC_BAZY\BazyDanych\BLL\obj\Debug\net6.0\refint\BLL.dll
 C:\Users\student\Desktop\JC_BAZY\BazyDanych\BLL\obj\Debug\net6.0\BLL.pdb
 C:\Users\student\Desktop\JC_BAZY\BazyDanych\BLL\obj\Debug\net6.0\ref\BLL.dll
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\bin\Debug\net6.0\BLL.deps.json
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\bin\Debug\net6.0\BLL.dll
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\bin\Debug\net6.0\BLL.pdb
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\BLL.sourcelink.json
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\BLL.dll
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\refint\BLL.dll
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\BLL.pdb
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\ref\BLL.dll
+C:\Users\Student RM4-3073 04\Desktop\JC\BazyDanych\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache

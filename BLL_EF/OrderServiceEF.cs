@@ -13,14 +13,14 @@ namespace BLL_EF
     public class OrderServiceEF : OrderService
     {
 
-        private WebShopContext context;
+        private WebShopContext context= new WebShopContext();
 
         public void addProductToBasket(int productId, int userId)
         {
-            User user = context.Users.Where(u => u.Id == userId).First();
-            Product product = context.Products.Where(p => p.Id == productId).First();
+            User? user = context.Users.Where(u => u.Id == userId).FirstOrDefault();
+            Product? product = context.Products.Where(p => p.Id == productId).FirstOrDefault();
 
-            if (user != null && product != null)
+            if (user != null && product != null && product.IsActive)
             {
                 BasketPosition basketPosition = new BasketPosition();
                 basketPosition.ProductId = productId;
@@ -33,13 +33,14 @@ namespace BLL_EF
                 }
 
                 user.BasketPosition.Add(basketPosition);
+                context.SaveChanges();
             }
-            context.SaveChanges();
+            
         }
 
         public void removeProductFromBasket(int productId, int userId)
         {
-            BasketPosition basketPosition = context.BasketPositions.Where(b => b.ProductId == productId && b.UserId == userId).First();
+            BasketPosition? basketPosition = context.BasketPositions.Where(b => b.ProductId == productId && b.UserId == userId).FirstOrDefault();
 
             if (basketPosition != null)
             {
@@ -51,7 +52,12 @@ namespace BLL_EF
 
         public void updateProductQuantityInBasket(int productId, int userId, int quantity)
         {
-            BasketPosition basketPosition = context.BasketPositions.Where(b => b.ProductId == productId && b.UserId == userId).First();
+            if (quantity <= 0)
+            {
+                return;
+            }
+
+            BasketPosition? basketPosition = context.BasketPositions.Where(b => b.ProductId == productId && b.UserId == userId).FirstOrDefault();
 
             if (basketPosition != null)
             {
@@ -62,7 +68,7 @@ namespace BLL_EF
 
         public OrderResponseDTO generateOrder(int userId)
         {
-            User user = context.Users.Where(u => u.Id == userId).First();
+            User? user = context.Users.Where(u => u.Id == userId).FirstOrDefault();
 
             if (user != null)
             {
@@ -94,16 +100,16 @@ namespace BLL_EF
             return null;
         }
 
-        public void payForOrder(int orderId)
+        public void payForOrder(int orderId, double payment)
         {
-            Order order = context.Orders.Where(o => o.Id == orderId).First();
+            Order? order = context.Orders.Where(o => o.Id == orderId).FirstOrDefault();
 
-            if (order != null)
+            if (order != null && payment == order.getRequiredPayment())
             {
                 order.isPayed = true;
+                context.SaveChanges();
             }
-
-            context.SaveChanges();
         }
+
     }
 }

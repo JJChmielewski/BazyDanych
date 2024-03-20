@@ -21,5 +21,15 @@ namespace Model
 
         public ICollection<OrderPosition>? OrderPositions { get; set; }
         public bool isPayed { get; set; }
+
+        public double getRequiredPayment()
+        {
+            double payment = 0;
+            foreach (OrderPosition orderPosition in OrderPositions)
+            {
+                payment += orderPosition.Price;
+            }
+            return payment;
+        }
     }
 }
