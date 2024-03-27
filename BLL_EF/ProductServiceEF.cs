@@ -145,12 +145,12 @@ namespace BLL_EF
             product.Price = price;
             product.Image = "";
             product.GroupId = groupId;
+            product.IsActive = true;
             product.ProductGroup = context.ProductGroups.Where(group => group.ProductGroupId == groupId).FirstOrDefault();
 
             if (product.ProductGroup != null)
             {
                 product.GroupId = groupId;
-                product.ProductGroup.Products.Add(product);
             }
 
             context.Products.Add(product);

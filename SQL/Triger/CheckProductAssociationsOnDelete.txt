@@ -1,0 +1,33 @@
+CREATE TRIGGER CheckProductAssociationsOnDelete
+ON Products
+INSTEAD OF DELETE
+AS
+BEGIN
+    DECLARE @DeletedProductId INT;
+    SELECT @DeletedProductId = Id FROM deleted;
+
+    IF EXISTS (
+        SELECT 1
+        FROM Orders o
+        INNER JOIN OrderPositions od ON o.ID = od.OrderID
+        WHERE od.ProductID = @DeletedProductId AND o.IsPayed = 0
+    )
+    BEGIN
+        RAISERROR('Product is associated with unpaid orders and cannot be deleted.', 16, 1);
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    IF EXISTS (
+        SELECT 1
+        FROM BasketPositions
+        WHERE ProductID = @DeletedProductId
+    )
+    BEGIN
+        RAISERROR('Product is associated with basket positions and cannot be deleted.', 16, 1);
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    DELETE FROM Products WHERE Id = @DeletedProductId;
+END;

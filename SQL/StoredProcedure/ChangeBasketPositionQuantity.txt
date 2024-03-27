@@ -1,0 +1,17 @@
+CREATE PROCEDURE ChangeBasketPositionQuantity
+    @ProductId INT,
+	@UserId INT,
+    @NewQuantity INT
+AS
+BEGIN
+    IF @NewQuantity <= 0
+    BEGIN
+        RAISERROR('Quantity must be greater than 0.', 16, 1);
+        RETURN;
+    END
+
+    UPDATE BasketPositions
+    SET Amount = @NewQuantity
+    WHERE ProductId = @ProductId and UserId = @UserId;
+
+END

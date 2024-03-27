@@ -10,6 +10,14 @@ namespace BLL.DTOModels
     {
         public int Id { get; set; }
         public ICollection<OrderItemDTO> ItemDTOs { get; } = new List<OrderItemDTO>();
-        public double Total { get; }
+        public double Total { get; set; }
+        public OrderResponseDTO() { }
+
+        public OrderResponseDTO(int id, ICollection<OrderItemDTO> itemDTOs, double total)
+        {
+            Id = id;
+            ItemDTOs = itemDTOs;
+            Total = total;
+        }
     }
 }

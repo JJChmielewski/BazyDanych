@@ -2651,19 +2651,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Student RM4-3073 04\\.nuget\\packages\\": {}
+    "C:\\Users\\Student RM4-3073 11\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student RM4-3073 04\\Desktop\\JC\\BazyDanych\\BLL_EF\\BLL_EF.csproj",
+      "projectUniqueName": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL_EF\\BLL_EF.csproj",
       "projectName": "BLL_EF",
-      "projectPath": "C:\\Users\\Student RM4-3073 04\\Desktop\\JC\\BazyDanych\\BLL_EF\\BLL_EF.csproj",
-      "packagesPath": "C:\\Users\\Student RM4-3073 04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student RM4-3073 04\\Desktop\\JC\\BazyDanych\\BLL_EF\\obj\\",
+      "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL_EF\\BLL_EF.csproj",
+      "packagesPath": "C:\\Users\\Student RM4-3073 11\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL_EF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Student RM4-3073 04\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Student RM4-3073 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2677,14 +2677,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Student RM4-3073 04\\Desktop\\JC\\BazyDanych\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\Student RM4-3073 04\\Desktop\\JC\\BazyDanych\\BLL\\BLL.csproj"
+            "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL\\BLL.csproj"
             },
-            "C:\\Users\\Student RM4-3073 04\\Desktop\\JC\\BazyDanych\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Student RM4-3073 04\\Desktop\\JC\\BazyDanych\\DAL\\DAL.csproj"
+            "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\Student RM4-3073 04\\Desktop\\JC\\BazyDanych\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\Student RM4-3073 04\\Desktop\\JC\\BazyDanych\\Model\\Model.csproj"
+            "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\Model\\Model.csproj"
             }
           }
         }

@@ -1,0 +1,37 @@
+CREATE PROCEDURE PayOrder
+    @OrderId INT,
+    @AmountPaid DECIMAL(18, 2)
+AS
+BEGIN
+    DECLARE @OrderTotal DECIMAL(18, 2);
+
+    IF EXISTS (
+        SELECT 1
+        FROM Orders
+        WHERE ID = @OrderId AND IsPayed = 0
+    )
+    BEGIN
+        SELECT @OrderTotal = SUM(op.Amount * op.Price)
+        FROM Orders o
+        INNER JOIN OrderPositions op ON o.ID = op.OrderID
+        WHERE o.ID = @OrderId;
+
+        IF @AmountPaid = @OrderTotal
+        BEGIN
+            UPDATE Orders
+            SET IsPayed = 1
+            WHERE ID = @OrderId;
+
+        END
+        ELSE
+        BEGIN
+            RAISERROR('Paid amount does not match the total amount of the order.', 16, 1);
+            RETURN;
+        END
+    END
+    ELSE
+    BEGIN
+        RAISERROR('Order is already paid or does not exist.', 16, 1);
+        RETURN;
+    END
+END

@@ -1,0 +1,21 @@
+CREATE PROCEDURE GenerateOrderFromBasket
+    @UserId INT
+AS
+BEGIN
+    DECLARE @NewOrderId INT;
+    INSERT INTO Orders (UserId, DateTime, IsPayed)
+    VALUES (@UserId, GETDATE(), 0); 
+
+    SET @NewOrderId = IDENT_CURRENT('Orders')
+
+    INSERT INTO dbo.OrderPositions(OrderId, ProductId, Price, Amount)
+    SELECT OrderId = @NewOrderId, ProductId, p.Price, Amount
+    FROM BasketPositions inner join Products p on p.Id = ProductId
+    WHERE UserId = @UserId
+
+    DELETE FROM BasketPositions
+    WHERE UserId = @UserId;
+
+	Select * from dbo.OrderPositions where OrderId = @NewOrderId
+
+END

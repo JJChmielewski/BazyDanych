@@ -1,0 +1,21 @@
+CREATE PROCEDURE AddProductToBasket
+    @ProductId INT,
+    @UserId INT
+AS
+BEGIN
+    DECLARE @IsActive BIT;
+
+    -- Sprawdź, czy produkt jest aktywny
+    SELECT @IsActive = IsActive
+    FROM Products
+    WHERE Id = @ProductId;
+
+    IF @IsActive = 0
+    BEGIN
+        RAISERROR('Product is not active and cannot be added to the basket.', 16, 1);
+        RETURN;
+    END
+
+    INSERT INTO BasketPositions (ProductID, UserID, Amount)
+    VALUES (@ProductId, @UserId, 1); 
+END

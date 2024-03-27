@@ -19,7 +19,7 @@ namespace Model
 
         public DateTime DateTime { get; set; }
 
-        public ICollection<OrderPosition>? OrderPositions { get; set; }
+        public ICollection<OrderPosition>? OrderPositions { get; set; } = new List<OrderPosition>();
         public bool isPayed { get; set; }
 
         public double getRequiredPayment()
@@ -27,7 +27,7 @@ namespace Model
             double payment = 0;
             foreach (OrderPosition orderPosition in OrderPositions)
             {
-                payment += orderPosition.Price;
+                payment += orderPosition.Amount * orderPosition.Product.Price;
             }
             return payment;
         }

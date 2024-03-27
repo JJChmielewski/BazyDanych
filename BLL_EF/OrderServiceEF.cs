@@ -1,6 +1,7 @@
 ﻿using BLL.DTOModels;
 using BLL.ServiceInterfaces;
 using DAL;
+using Microsoft.EntityFrameworkCore;
 using Model;
 using System;
 using System.Collections.Generic;
@@ -69,6 +70,8 @@ namespace BLL_EF
         public OrderResponseDTO generateOrder(int userId)
         {
             User? user = context.Users.Where(u => u.Id == userId).FirstOrDefault();
+            context.Entry(user).Collection(u => u.BasketPosition).Load();
+
 
             if (user != null)
             {
@@ -76,6 +79,10 @@ namespace BLL_EF
                 OrderResponseDTO orderResponseDTO = new OrderResponseDTO();
 
                 foreach(BasketPosition basketPosition in user.BasketPosition) {
+                    context.Entry(basketPosition).Reference(b => b.Product).Load();
+                    context.Entry(basketPosition.Product).Reference(p => p.ProductGroup).Load();
+
+
                     ProductResponseDTO prod = new ProductResponseDTO(
                         basketPosition.Product.Id, basketPosition.Product.Name, basketPosition.Product.Price,
                         basketPosition.Product.ProductGroup.Name);
@@ -92,6 +99,7 @@ namespace BLL_EF
 
                 context.Orders.Add(order);
                 context.SaveChanges();
+                orderResponseDTO.Total = order.getRequiredPayment();
 
                 return orderResponseDTO;
             }
@@ -103,6 +111,12 @@ namespace BLL_EF
         public void payForOrder(int orderId, double payment)
         {
             Order? order = context.Orders.Where(o => o.Id == orderId).FirstOrDefault();
+            context.Entry(order).Collection(o => o.OrderPositions).Load();
+
+            foreach (OrderPosition position in order.OrderPositions)
+            {
+                context.Entry(position).Reference(o => o.Product).Load();
+            }
 
             if (order != null && payment == order.getRequiredPayment())
             {
