@@ -1,12 +1,103 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\BazyDanych\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA11963-65F2-45AE-B9D5-18A4CC6CA478}|..\\DAL\\DAL.csproj|c:\\users\\chmielu\\source\\repos\\bazydanych\\dal\\webshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA11963-65F2-45AE-B9D5-18A4CC6CA478}|..\\DAL\\DAL.csproj|c:\\users\\chmielu\\source\\repos\\bazydanych\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47C8FD82-9696-45CF-A1C8-F0A0C64BF3C0}|BazyDanych.csproj|c:\\users\\chmielu\\source\\repos\\bazydanych\\bazydanych\\controllers\\productscontrolleref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47C8FD82-9696-45CF-A1C8-F0A0C64BF3C0}|BazyDanych.csproj|solutionrelative:controllers\\productscontrolleref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47C8FD82-9696-45CF-A1C8-F0A0C64BF3C0}|BazyDanych.csproj|c:\\users\\chmielu\\source\\repos\\bazydanych\\bazydanych\\controllers\\productsdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47C8FD82-9696-45CF-A1C8-F0A0C64BF3C0}|BazyDanych.csproj|solutionrelative:controllers\\productsdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47C8FD82-9696-45CF-A1C8-F0A0C64BF3C0}|BazyDanych.csproj|c:\\users\\chmielu\\source\\repos\\bazydanych\\bazydanych\\controllers\\orderefcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47C8FD82-9696-45CF-A1C8-F0A0C64BF3C0}|BazyDanych.csproj|solutionrelative:controllers\\orderefcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebshopContext.cs",
+              "DocumentMoniker": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\DAL\\WebshopContext.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\WebshopContext.cs",
+              "ToolTip": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\DAL\\WebshopContext.cs",
+              "RelativeToolTip": "..\\DAL\\WebshopContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:55:38.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DAL",
+              "DocumentMoniker": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\DAL\\DAL.csproj",
+              "RelativeDocumentMoniker": "..\\DAL\\DAL.csproj",
+              "ToolTip": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\DAL\\DAL.csproj",
+              "RelativeToolTip": "..\\DAL\\DAL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-14T18:55:33.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsDBController.cs",
+              "DocumentMoniker": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\Controllers\\ProductsDBController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsDBController.cs",
+              "ToolTip": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\Controllers\\ProductsDBController.cs",
+              "RelativeToolTip": "Controllers\\ProductsDBController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:49:23.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsControllerEF.cs",
+              "DocumentMoniker": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\Controllers\\ProductsControllerEF.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsControllerEF.cs",
+              "ToolTip": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\Controllers\\ProductsControllerEF.cs",
+              "RelativeToolTip": "Controllers\\ProductsControllerEF.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA4wCYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:49:22.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderEFController.cs",
+              "DocumentMoniker": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\Controllers\\OrderEFController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderEFController.cs",
+              "ToolTip": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\Controllers\\OrderEFController.cs",
+              "RelativeToolTip": "Controllers\\OrderEFController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:49:06.991Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

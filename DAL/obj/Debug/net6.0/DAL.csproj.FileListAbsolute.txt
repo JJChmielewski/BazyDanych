@@ -51,3 +51,21 @@ C:\Users\Student RM4-3073 11\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\refint
 C:\Users\Student RM4-3073 11\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.pdb
 C:\Users\Student RM4-3073 11\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
 C:\Users\Student RM4-3073 11\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\ref\DAL.dll
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\bin\Debug\net6.0\DAL.dll
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\bin\Debug\net6.0\Model.dll
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\bin\Debug\net6.0\Model.pdb
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
+C:\Users\Chmielu\Source\Repos\BazyDanych\DAL\obj\Debug\net6.0\ref\DAL.dll
+C:\Users\Chmielu\source\repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.sourcelink.json
+C:\Users\Chmielu\source\repos\BazyDanych\DAL\obj\Debug\net6.0\DAL.csproj.Up2Date

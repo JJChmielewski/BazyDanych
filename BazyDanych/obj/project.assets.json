@@ -3098,19 +3098,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Student RM4-3073 11\\.nuget\\packages\\": {}
+    "C:\\Users\\Chmielu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BazyDanych\\BazyDanych.csproj",
+      "projectUniqueName": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\BazyDanych.csproj",
       "projectName": "BazyDanych",
-      "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BazyDanych\\BazyDanych.csproj",
-      "packagesPath": "C:\\Users\\Student RM4-3073 11\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BazyDanych\\obj\\",
+      "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\BazyDanych.csproj",
+      "packagesPath": "C:\\Users\\Chmielu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BazyDanych\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Student RM4-3073 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Chmielu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3124,14 +3124,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj": {
-              "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj"
+            "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj": {
+              "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj"
             },
-            "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL_EF\\BLL_EF.csproj": {
-              "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL_EF\\BLL_EF.csproj"
+            "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL_EF\\BLL_EF.csproj": {
+              "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL_EF\\BLL_EF.csproj"
             },
-            "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\DAL\\DAL.csproj"
+            "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\DAL\\DAL.csproj"
             }
           }
         }
@@ -3199,7 +3199,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

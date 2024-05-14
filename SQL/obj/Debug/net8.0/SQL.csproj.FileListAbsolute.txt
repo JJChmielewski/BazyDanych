@@ -10,3 +10,15 @@ C:\Users\Student RM4-3073 11\Source\Repos\BazyDanych\SQL\obj\Debug\net8.0\SQL.dl
 C:\Users\Student RM4-3073 11\Source\Repos\BazyDanych\SQL\obj\Debug\net8.0\refint\SQL.dll
 C:\Users\Student RM4-3073 11\Source\Repos\BazyDanych\SQL\obj\Debug\net8.0\SQL.pdb
 C:\Users\Student RM4-3073 11\Source\Repos\BazyDanych\SQL\obj\Debug\net8.0\ref\SQL.dll
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\bin\Debug\net8.0\SQL.deps.json
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\bin\Debug\net8.0\SQL.dll
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\bin\Debug\net8.0\SQL.pdb
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\obj\Debug\net8.0\SQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\obj\Debug\net8.0\SQL.AssemblyInfoInputs.cache
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\obj\Debug\net8.0\SQL.AssemblyInfo.cs
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\obj\Debug\net8.0\SQL.csproj.CoreCompileInputs.cache
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\obj\Debug\net8.0\SQL.sourcelink.json
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\obj\Debug\net8.0\SQL.dll
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\obj\Debug\net8.0\refint\SQL.dll
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\obj\Debug\net8.0\SQL.pdb
+C:\Users\Chmielu\source\repos\BazyDanych\SQL\obj\Debug\net8.0\ref\SQL.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BazyDanych")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1514040fda78baec218760d1a21771fc12f276af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55cbeab87c835a3a84c728460093d1fa29d3456d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BazyDanych")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BazyDanych")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\SQL\\SQL.csproj": {}
+    "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\SQL\\SQL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\SQL\\SQL.csproj": {
+    "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\SQL\\SQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\SQL\\SQL.csproj",
+        "projectUniqueName": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\SQL\\SQL.csproj",
         "projectName": "SQL",
-        "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\SQL\\SQL.csproj",
-        "packagesPath": "C:\\Users\\Student RM4-3073 11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\SQL\\obj\\",
+        "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\SQL\\SQL.csproj",
+        "packagesPath": "C:\\Users\\Chmielu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\SQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Student RM4-3073 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Chmielu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

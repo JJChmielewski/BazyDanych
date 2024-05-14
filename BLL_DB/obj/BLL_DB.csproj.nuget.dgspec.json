@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj": {}
+    "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL\\BLL.csproj": {
+    "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL\\BLL.csproj",
-        "packagesPath": "C:\\Users\\Student RM4-3073 11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\BLL\\obj\\",
+        "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\Chmielu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Student RM4-3073 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Chmielu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,40 +61,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj": {
+    "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj",
+        "projectUniqueName": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj",
         "projectName": "BLL_DB",
-        "projectPath": "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj",
-        "packagesPath": "C:\\Users\\Student RM4-3073 11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\BLL_DB\\obj\\",
+        "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL_DB\\BLL_DB.csproj",
+        "packagesPath": "C:\\Users\\Chmielu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL_DB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Student RM4-3073 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Chmielu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,11 +94,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\BLL\\BLL.csproj"
+              "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\BLL\\BLL.csproj"
               },
-              "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\Student RM4-3073 11\\source\\repos\\BazyDanych\\Model\\Model.csproj"
+              "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\Model\\Model.csproj"
               }
             }
           }
@@ -147,21 +133,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\Model\\Model.csproj": {
+    "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Student RM4-3073 11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student RM4-3073 11\\Source\\Repos\\BazyDanych\\Model\\obj\\",
+        "projectPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Chmielu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chmielu\\source\\repos\\BazyDanych\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Student RM4-3073 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Chmielu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -228,26 +214,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }

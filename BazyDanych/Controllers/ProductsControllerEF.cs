@@ -26,7 +26,17 @@ namespace BazyDanych.Controllers
         }
 
 
+        [HttpDelete]
+        public void deleteProduct([FromQuery] int productId, [FromQuery] bool deletePremanently)
+        {
+            service.deleteProduct(productId, deletePremanently);
+        }
 
+        [HttpPut]
+        public void reactivateProduct([FromQuery] int productId)
+        {
+            service.reactivateProduct(productId);
+        }
 
     }
 }
